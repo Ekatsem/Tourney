@@ -22,10 +22,10 @@ public class Game {
             
         }
         if (player1 == null){
-            throw new RuntimeException("Player is not registered");
+            throw new NotRegisteredException("Player is not registered");
         }
         if (player2 == null){
-            throw new RuntimeException("Player is not registered");
+            throw new NotRegisteredException("Player is not registered");
         }
         if (player1.getStrength() > player2.getStrength()){
             return 1;
